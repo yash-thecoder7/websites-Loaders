@@ -22,7 +22,7 @@
     background-color: yellow;
     border: 2px solid black;
     border-radius: 50%;
-    animation: sanj 0.5s ease-in-out 1.7s infinite alternate-reverse;
+    animation: box2 0.5s ease-in-out 1.7s infinite alternate-reverse;
 }
 
 #block{
@@ -31,7 +31,7 @@
     background-color: yellow;
     border: 2px solid black;
     border-radius: 50%;
-    animation: yash 0.5s ease-in-out 1.5s infinite alternate;
+    animation: box1 0.5s ease-in-out 1.5s infinite alternate;
 }
 #block3{
     height: 25px;
@@ -39,10 +39,10 @@
     background-color: yellow;
     border: 2px solid black;
     border-radius: 50%;
-    animation: ansh 0.5s ease-in-out 1s infinite alternate;
+    animation: box3 0.5s ease-in-out 1s infinite alternate;
 }
 
-@keyframes yash {
+@keyframes box1 {
     0%{
         transform: translateY(0);
     }
@@ -51,7 +51,7 @@
     }
 }
 
-@keyframes sanj {
+@keyframes box2 {
     0%{
         transform: translateY(0);
 
@@ -61,7 +61,7 @@
 
     }
 }
-@keyframes ansh {
+@keyframes box3 {
     0%{
         transform: translateY(0);
 
