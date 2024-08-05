@@ -1,74 +1,26 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.container{
-    height: 500px;
-    width: 500px;
-}
-.box{
-    height: 500px;
-    width: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+.loader{
+    height: 100px;
+    width: 100px;
+    border: 8px solid #000000;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    border-radius: 50%;
+    border-top-color:#f50707;
+    border-left-color: blue;
+    border-right-color: chartreuse;
+    animation: all;
+    animation: spin 2s ease-in-out 0s infinite normal ;
     
+
 }
 
-#block2{
-    height: 25px;
-    width: 25px;
-    background-color: yellow;
-    border: 2px solid black;
-    border-radius: 50%;
-    animation: sanj 0.5s ease-in-out 1.7s infinite alternate-reverse;
-}
-
-#block{
-    height: 25px;
-    width: 25px;
-    background-color: yellow;
-    border: 2px solid black;
-    border-radius: 50%;
-    animation: yash 0.5s ease-in-out 1.5s infinite alternate;
-}
-#block3{
-    height: 25px;
-    width: 25px;
-    background-color: yellow;
-    border: 2px solid black;
-    border-radius: 50%;
-    animation: ansh 0.5s ease-in-out 1s infinite alternate;
-}
-
-@keyframes yash {
+@keyframes spin{
     0%{
-        transform: translateY(0);
+        transform: rotate(0deg);
     }
     100%{
-        transform: translateY(2rem);
+        transform: rotate(360deg);
     }
+
 }
-
-@keyframes sanj {
-    0%{
-        transform: translateY(0);
-
-    }
-    100%{
-        transform: translateY(2rem);
-
-    }
-}
-@keyframes ansh {
-    0%{
-        transform: translateY(0);
-
-    }
-    100%{
-        transform: translateY(2rem);
-
-    }
-}
-
